@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 360px;
+            /* Adjust based on popup width */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        #results {
+            max-height: 500px;
+            /* Adjust based on popup height */
+            overflow-y: auto;
+            /* Allow scrolling if results overflow */
+        }
+
+        button {
+            width: 100%;
+            /* Ensure button fits well */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Semantic Bookmark Search</h2>
+    <form id="searchForm">
+        <input type="text" id="searchQuery" placeholder="Enter your query..." required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
